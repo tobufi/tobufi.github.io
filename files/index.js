@@ -4,8 +4,13 @@
 let games = {
     "hangout":{
         'title':"The Hangout",
-        'download':"files/places/The Hangout.rbxl",
-        'description':"A game created in the 2010M client by fed, Zork, and tobuFI!"
+        'download':"The Hangout.rbxl",
+        'description':"A hangout game created in the 2010M client by fed, Zork, and tobuFI (me)!"
+    },
+    "waapp_au":{
+        'title':'Work At A Pizza Place AU',
+        'download':"Work At A Pizza Place AU.rbxl",
+        'description':"An altered version of Work At A Pizza Place created in the 2010L client for a canceled web series."
     }
 }
 
@@ -22,15 +27,19 @@ function applylist(key, game) {
         element.appendChild(label)
 
         downlink = document.createElement('a')
-        downlink.href = game['download']
+        downlink.href = 'files/places/' + game['download']
         downlink.textContent = 'DOWNLOAD'
         label.appendChild(downlink)
 
         for (let i = 1; i < 4; i++) { // 1-3
+            direct = 'files/images/games/' + key + '/' + i + '.png'
+            linkie = document.createElement('a')
+            linkie.href = direct 
+            element.appendChild(linkie)
             image = document.createElement('img')
             image.id = 'thumb'
             image.src = 'files/images/games/' + key + '/' + i + '.png'
-            element.appendChild(image)
+            linkie.appendChild(image)
         }
 
         desc = document.createElement('p')
