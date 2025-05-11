@@ -5,12 +5,17 @@ let games = {
     "hangout":{
         'title':"The Hangout",
         'download':"The Hangout.rbxl",
-        'description':"A hangout game created in the 2010M client by fed, Zork, and tobuFI (me)!"
+        'description':"A hangout game created in the 2010M client by fed, Zork, and tobuFI (me!)"
     },
     "waapp_au":{
         'title':'Work At A Pizza Place AU',
         'download':"Work At A Pizza Place AU.rbxl",
         'description':"An altered version of Work At A Pizza Place created in the 2010L client for a canceled web series."
+    },
+    "waapp_2009":{
+        'title': "Work At A Pizza Place 2009",
+        'download':"Work At A Pizza Place 2009 Recreation.rbxl",
+        'description':"A recreated version of the early 2009 version of Work At A Pizza Place by Zork & tobuFI (me!)"
     }
 }
 
