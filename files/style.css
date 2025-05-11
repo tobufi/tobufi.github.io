@@ -1,6 +1,6 @@
 body {
     font-family: Verdana, Arial, 'Times New Roman';
-    background: #DFDBC3
+    background: #DFDBC3 url('images/weld.png');
 }
 
 hr {
@@ -15,15 +15,31 @@ hr {
 
 #container {
     width: 700px;
-    background: #ccc8b1;
+    background: #cdc9b2 /*url('images/weld.png') top right repeat-y*/;
     /*font-size: 0.8em;*/
-    /*margin: auto;*/
+    margin: auto;
 }
     
 #title {
     display:inline;
     position:relative;
     bottom:55px;
+    padding:10px;
+}
+
+#socials {
+    display:inline;
+    position:relative;
+    bottom:35px;
+    right:305px;
+}
+
+#sitelinks {
+    list-style-type:none;
+    float:right;
+    margin-right:10px;
+    margin-top:22px;
+    text-align:right;
 }
 
 #showcase{
@@ -50,4 +66,8 @@ h2 {
 p {
     margin-top:0px;
     margin-bottom:4px;
+}
+
+br { 
+    margin-bottom: 10px;
 }
