@@ -2,6 +2,11 @@
 //var files = readdirSync('/images/games/');
 
 let games = {
+    "brawlr":{
+        'title':"BrawlR",
+        'visit':"https://www.roblox.com/games/18667278953",
+        'description':"An in-dev fighting game that uses the classic Roblox aesthetic as a base for a unique and expanding fighting enviroment."
+    },
     "hangout":{
         'title':"The Hangout",
         'download':"The Hangout.rbxl",
@@ -19,44 +24,50 @@ let games = {
     }
 }
 
+spawn = document.getElementById("container")
+
 function applylist(key, game) {
-    spawn = document.getElementById(key);
-    if (spawn != null) {
-        //console.log(element)
-        element = document.createElement('div')
-        element.id = 'showcase'
-        spawn.appendChild(element)
+    element = document.createElement('div')
+    element.id = 'showcase'
+    spawn.appendChild(element)
 
-        label = document.createElement('h2')
-        label.textContent = game['title'] + " - "
-        element.appendChild(label)
+    label = document.createElement('h2')
+    label.textContent = game['title'] + " - "
+    element.appendChild(label)
 
-        downlink = document.createElement('a')
-        downlink.href = 'files/places/' + game['download']
-        downlink.textContent = 'DOWNLOAD'
-        label.appendChild(downlink)
-
-        for (let i = 1; i < 4; i++) { // 1-3
-            direct = 'files/images/games/' + key + '/' + i + '.png'
-            linkie = document.createElement('a')
-            linkie.href = direct 
-            element.appendChild(linkie)
-            image = document.createElement('img')
-            image.id = 'thumb'
-            image.src = 'files/images/games/' + key + '/' + i + '.png'
-            linkie.appendChild(image)
-        }
-
-        desc = document.createElement('p')
-        desc.textContent = game['description']
-        element.appendChild(desc)
+    destination = ""
+    txtcontent = ""
+    if (game['download']) { 
+        destination = 'files/places/' + game['download']
+        txtcontent = "DOWNLOAD"
+    } else { 
+        destination = game['visit']
+        txtcontent = "VISIT"
     }
+
+    downlink = document.createElement('a')
+    downlink.href = destination
+    downlink.textContent = txtcontent
+    label.appendChild(downlink)
+
+    for (let i = 1; i < 4; i++) { // 1-3
+        direct = 'files/images/games/' + key + '/' + i + '.png'
+        linkie = document.createElement('a')
+        linkie.href = direct 
+        element.appendChild(linkie)
+        image = document.createElement('img')
+        image.id = 'thumb'
+        image.src = 'files/images/games/' + key + '/' + i + '.png'
+        linkie.appendChild(image)
+    }
+
+    desc = document.createElement('p')
+    desc.textContent = game['description']
+    element.appendChild(desc)
 }
 
-for (var key in games) {
-    // check if the property/key is defined in the object itself, not in parent
-    if (games.hasOwnProperty(key)) {           
-        console.log(key);
+if (spawn != null) {
+    for (var key in games) {
         applylist(key, games[key])
     }
 }

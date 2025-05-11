@@ -8,8 +8,8 @@ hr {
     border: none;
     height: 10px;
     /* Set the hr color */
-    color: #333;  /* old IE */
-    background-color: #333;  /* Modern Browsers */
+    color: #57524f;  /* #333old IE */
+    background-color: #57524f;  /* #333Modern Browsers */
     margin-top:-6px;
 }
 
@@ -45,7 +45,7 @@ hr {
 #showcase{
     width:95%;
     /*height:100px;*/
-    border: 5px solid gray;
+    border: 5px solid #817978;
     margin: 0 auto;
     margin-bottom:5px;
     padding:2px;
