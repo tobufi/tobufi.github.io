@@ -15,7 +15,7 @@ let games = {
     "waapp_au":{
         'title':'Work At A Pizza Place AU',
         'download':"Work At A Pizza Place AU.rbxl",
-        'description':"An altered version of Work At A Pizza Place created in the 2010L client for a canceled web series."
+        'description':"An altered version of Work At A Pizza Place created in the 2010L client for a <a href='https://www.youtube.com/watch?v=q7c3vHEy_sA'>canceled web series.</a>"
     },
     "waapp_2009":{
         'title': "Work At A Pizza Place 2009",
@@ -62,7 +62,7 @@ function applylist(key, game) {
     }
 
     desc = document.createElement('p')
-    desc.textContent = game['description']
+    desc.innerHTML = game['description']
     element.appendChild(desc)
 }
 
