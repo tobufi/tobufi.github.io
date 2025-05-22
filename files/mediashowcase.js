@@ -16,9 +16,9 @@ let media = {
     },
 }
 
-spawn = document.getElementById("container")
+mm_spawn = document.getElementById("misc_media") //"container")
 
-function applylist(direct, info, index) {
+function applylist(direct, info, index, spawn) {
     margin = "10px"
     if (index%3 == 0) {
         margin = "0px"
@@ -51,10 +51,10 @@ function applylist(direct, info, index) {
     element.appendChild(myInfo)
 }
 
-if (spawn != null) {
+if (mm_spawn != null) {
     index = 0
     for (var key in media) {
         index = index + 1
-        applylist(key, media[key], index)
+        applylist(key, media[key], index, mm_spawn)
     }
 }

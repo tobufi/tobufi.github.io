@@ -5,12 +5,17 @@ let games = {
     "brawlr":{
         'title':"BrawlR",
         'visit':"https://www.roblox.com/games/18667278953",
-        'description':"An in-dev fighting game that uses the classic Roblox aesthetic as a base for a unique and expanding fighting enviroment."
+        'description':"An in-dev fighting game that uses the classic Roblox aesthetic as a base for a unique and expanding fighting enviroment. Developed by <a href='https://tn.productions'>TN Productions.</a>"
     },
+    /*"spooking_out":{ // replace with 'honorable mentions' list since the github download has dead redirect
+        'title':"Spooking Out",
+        'download':"Spooking Out.rbxl",
+        'description':"2022 Novetus Halloween Place Content Winner. Defeat ghosts and throw them back to HELL! A collaborative effort by me & <a href='https://realja.me/'>realjame.</a>"
+    },*/
     "hangout":{
         'title':"The Hangout",
         'download':"The Hangout.rbxl",
-        'description':"A hangout game created in the 2010M client by fed, Zork, and tobuFI (me!)"
+        'description':"A hangout game created in the 2010M client by me & <a href='https://x.com/fededoesstuff'>fed</a> & <a href='https://www.superphonerecordings.com/'>Zork.</a>"
     },
     "waapp_au":{
         'title':'Work At A Pizza Place AU',
@@ -20,7 +25,7 @@ let games = {
     "waapp_2009":{
         'title': "Work At A Pizza Place 2009",
         'download':"Work At A Pizza Place 2009 Recreation.rbxl",
-        'description':"A recreated version of the early 2009 version of Work At A Pizza Place by Zork & tobuFI (me!)"
+        'description':"A recreated version of the early 2009 version of Work At A Pizza Place by me & Zork."
     }
 }
 

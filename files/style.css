@@ -3,16 +3,6 @@ body {
     background: #DFDBC3 url('images/weld.png');
 }
 
-hr {
-    display:flex;
-    border: none;
-    height: 10px;
-    /* Set the hr color */
-    color: #57524f;  /* #333old IE */
-    background-color: #57524f;  /* #333Modern Browsers */
-    margin-top:-6px;
-}
-
 #container {
     width: 700px;
     background: #cdc9b2 /*url('images/weld.png') top right repeat-y*/;
@@ -43,6 +33,16 @@ hr {
     text-align:right;
 }
 
+#titlehr {
+    display:flex;
+    border: none;
+    height: 10px;
+    /* Set the hr color */
+    color: #57524f;  /* #333old IE */
+    background-color: #57524f;  /* #333Modern Browsers */
+    margin-top:-6px;
+}
+
 #showcase{
     width:95%;
     /*height:100px;*/
@@ -60,9 +60,14 @@ hr {
     /*margin: 0 auto;*/
     display:inline-block;
     margin-bottom:5px;
-    margin-right:10px;
+    /*margin-right:10px;*/
     padding:2px;
     text-align:center;   
+}
+
+#split{
+    margin-top:-4px;
+    margin-bottom:6px;
 }
 
 #thumb{

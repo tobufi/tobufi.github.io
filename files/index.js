@@ -44,6 +44,8 @@ if (header != null) {
         links.appendChild(casing)
     }
 
+    bar.id = "titlehr"
+
     header.appendChild(icon)
     header.appendChild(title)
     header.appendChild(socials)
