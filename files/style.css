@@ -76,6 +76,43 @@ body {
     padding:2px;
 }
 
+#mini_container{
+    width:98%;
+    /*height:200px;*/ /*needs to be custom lol*/
+    margin:auto;
+}
+
+#mini_container ul {
+    list-style:inside;
+    text-align:left;
+    padding-left:2px;
+}
+
+#mini_container li { 
+    padding:5px;
+}
+
+#mini_container b { 
+    font-size:12px;
+    padding-top:20px;
+}
+
+#rbxplaces_h2{
+    text-align:right;
+    position:relative;
+    font-size:210%;
+    bottom:200px;
+    right:35px;
+    text-shadow: 3px 2px 2px white;
+}
+
+#rbxplaces_p1{
+    width: 60%;
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+}
+
 h2 {
     margin-top:-2px;
     margin-bottom:2px;
